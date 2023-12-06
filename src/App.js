@@ -123,18 +123,19 @@ const App = () => {
   
   const onMouseUp = () => {
     const { index, overIndex } = moveInfo;
-    if(index >= 0 && index !== overIndex){
+    if(index >= 0 && index !== overIndex && overIndex >= 0 && overIndex < data.length){
       const newData = [];
       data.forEach((d, i) => {
         if(i === index)return;
-        if(i === overIndex) newData.push(data[index]);
+        if(i === overIndex && index > overIndex) newData.push(data[index]);
         newData.push(d);
+        if(i === overIndex && index < overIndex) newData.push(data[index]);
       })
       setData(newData);
-      setMoveInfo({
-        index: -1,
-      })
     }
+    setMoveInfo({
+      index: -1,
+    })
   }
   
   const isOver = (i) => {
