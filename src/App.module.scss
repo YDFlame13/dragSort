@@ -1,0 +1,23 @@
+.root {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .item {
+      width: 32%;
+      background-color: #ffffff;
+      margin: 5px;
+      border: 1px solid #f0f2f5;
+    }
+    .moveItem {
+      background-color: #4b4848;
+    }
+    .copyItem {
+      background-color: #bbb6b6;
+      position: absolute;
+    }
+    .overItem {
+      border: 1px solid #6ac0e7;
+    }
+  }
+}
