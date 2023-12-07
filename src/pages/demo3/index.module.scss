@@ -2,7 +2,6 @@
   .list {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     overflow: hidden;
     border: 1px solid black;
     .item {
@@ -12,15 +11,15 @@
       border: 1px solid #c7c8ca;
       user-select: none;
     }
-    .draggingItem *{
-      pointer-events: none;
-    }
     .moveItem {
       background-color: #2e2d2d;
-      opacity: 1;
     }
     .overItem {
       border: 1px solid #6ac0e7;
+    }
+    .copyItem {
+      background-color: #bbb6b6;
+      position: fixed;
     }
   }
 }

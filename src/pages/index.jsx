@@ -4,7 +4,8 @@ const Index = () => {
   return (
     <>
       <Link to="/demo1">demo1</Link><br />
-      <Link to="/demo2">demo2</Link>
+      <Link to="/demo2">demo2</Link><br />
+      <Link to="/demo3">demo3</Link><br />
     </>
   )
 }
