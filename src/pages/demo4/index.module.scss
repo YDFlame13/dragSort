@@ -1,0 +1,26 @@
+.root {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    .item {
+      width: 32%;
+      background-color: #ffffff;
+      margin: 5px;
+      border: 1px solid #c7c8ca;
+      user-select: none;
+    }
+    .draggingItem *{
+      pointer-events: none;
+    }
+    .moveItem {
+      background-color: #2e2d2d;
+      opacity: 1;
+    }
+    .overItem {
+      border: 1px solid #6ac0e7;
+    }
+  }
+}
